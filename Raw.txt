@@ -1,0 +1,31 @@
+
+  .icons a{
+      text-decoration:none;
+      color: #fff;
+      alignment:horizontal;
+      list-style:none;
+  
+  }
+  .icons ion-icon{
+      color: #fff;
+      font-size: 30px;
+      padding-left: 20px;
+      padding-right: 8px;
+      padding-top: 5px;
+      transition: 1s;
+      list-style: none;
+  }
+  .icons ion-icon:hover{
+      color: orange;
+      transform: translateY(-8px);
+}
+
+<!--                      <  <p class="liw">Log in With</p>
+
+                      <div class="icons">
+                            <a href="https://www.facebook.com/indiandefencecom/"><ion-icon name="logo-facebook"></ion-icon></a>
+                            <a href="https://www.instagram.com/defenceminindia/"><ion-icon name="logo-instagram"></ion-icon></a>
+                            <a href="https://twitter.com/DefenceMinIndia"><ion-icon name="logo-twitter"></ion-icon></a>
+                            <a href="https://www.mod.gov.in/"><ion-icon name="logo-google"></ion-icon></a>
+
+                        </div> -->

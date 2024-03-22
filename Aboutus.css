@@ -1,0 +1,113 @@
+*{ 
+  margin:0px;
+  padding:0px;
+  width:100%;
+  }
+
+#body1{
+background-image:url('front.jpg');
+ background-repeat:no-repeat;
+background-size:100%;
+height:140px;
+margin:0px;
+
+}
+
+h1 {
+  color: white;
+  font-size: 48px;
+  text-align: center;
+  transform: translateY(35px); /* Slides the element down using a transformation */
+}
+ 
+.body2{
+ height:100%;
+ width:100%;
+ background-image:url("check.jpg");
+ background-size:cover;
+ background-repeat:no-repeat;
+ }
+ 
+#clm {
+  float: left;
+  width: 28%;
+  height: 300px;
+  margin-right: 36px; /* Add a 12px margin to the right of each column */
+  box-shadow: 0 2px 5px rgba(0, 10, 12, 0.2);
+  margin-inline-start: 38px;
+}
+
+#clm:last-child {
+  margin-right: 0; /* Remove the margin from the last column */
+}
+
+
+
+.row #clm {
+  border: 4px solid green;
+  border-radius: 5px;
+
+  
+}
+
+
+a{
+color:black;
+
+text-decoration:none;
+}
+
+.row #clm:hover {
+  transform: scale(1.06); /* Zoom in by 5% */
+  transition: transform 0.3s ease-in-out; /* Add a smooth transition */
+  border: 25px solid orange(to right, red, orange, yellow, green, blue, indigo, violet);
+  animation: rainbow 1s ease-in-out infinite;
+  
+  animation: pulse-fade 1s ease-in-out infinite;
+  
+  
+}
+
+.title {
+  display: flex; /* Arrange elements horizontally */
+  justify-content: space-between; /* Distribute elements with equal spacing */
+}
+
+#tit {
+  /* Optional: Adjust spacing between individual elements */
+  margin-right: 15px;
+}
+
+#tit:last-child {
+  margin-right: 0; /* Remove margin from the last element */
+}
+
+.logo1 {
+    width:110px;
+         height:110px;
+         position:absolute;
+                  left:1050px;
+                  top:12px;
+         animation-name:logo;
+         animation-duration:5s;
+        animation-timimg-function:ease;
+      
+       
+ }
+ 
+  .logo2 {
+     width:100px;
+             height:100px;
+             position:absolute;
+                      left:350px;
+                      top:18px;
+             animation-name:logo;
+             animation-duration:5s;
+       animation-timimg-function:5ease;
+        
+ }
+ 
+#para {
+  width: 90vw; /* 80% of the viewport width */
+  font-weight: bold;
+}

@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Scrolling Updates</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #f0f0f0;
+      margin: 0;
+      padding: 0;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh; /* Make body take up full viewport height */
+    }
+    .container {
+      width: 300px;
+      height: 300px;
+      overflow: hidden;
+      border-radius: 10px;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+      background: linear-gradient(45deg, #3498db, #9b59b6);
+      position: relative;
+    }
+    .scrolling-text {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      overflow: hidden;
+      padding: 20px;
+      box-sizing: border-box;
+    }
+    .scrolling-text ul {
+      margin: 0;
+      padding: 0;
+      list-style: none;
+      animation: scroll 15s linear infinite; /* Adjust duration as needed */
+      overflow-y: auto; /* Add scrollbar */
+    }
+    @keyframes scroll {
+      0% {
+        transform: translateY(0%);
+      }
+      100% {
+        transform: translateY(-100%);
+      }
+    }
+    li {
+      background-color: rgba(255, 255, 255, 0.9);
+      padding: 10px;
+      margin: 5px 0;
+      border-radius: 5px;
+      box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    }
+
+    li:hover {
+      background-color:orange;
+      color:black;
+    }
+    .heading {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      padding: 2px;
+      box-sizing: border-box;
+      text-align: center;
+      background-color: rgba(255, 255, 255, 255);
+      border-top-left-radius: 10px;
+      border-top-right-radius: 10px;
+      z-index: 5; /* Ensures the heading is above the scrolling text */
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <div class="heading">
+      <h2>Army Updates</h2>
+    </div>
+    <div class="scrolling-text">
+      <ul>
+        <li><a href="Aboutus.html">All Forces</a></li>
+        <li>Wet a Joy - February 25, 2024</li>
+        <li>Wet b Joy - February 25, 2024</li>
+        <li>Wet c Joy - February 25, 2024</li>
+        <li>Wet d Joy - February 25, 2024</li>
+        <li>Wet e Joy - February 25, 2024</li>
+        <li>Wet f Joy - February 25, 2024</li>
+      </ul>
+    </div>
+  </div>
+</body>
+</html>
